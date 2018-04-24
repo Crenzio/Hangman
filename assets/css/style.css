@@ -59,6 +59,10 @@ div.image {
     text-transform: uppercase;
 }
 
+#pic {
+    min-height: 356px;
+}
+
 img.pic {
     border: solid 3px;
     border-color: #666666;
