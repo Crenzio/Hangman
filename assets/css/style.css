@@ -1,41 +1,51 @@
-header {
-    top: 0px;
+body {
+    min-width: 380px;
+    background-color: #666666;
+    padding-top: 20px;
 }
 
-body {
-    background-color: #666666;
+div.main {
+    max-width: 500px; 
+    min-width: 360px;
+    margin: 0 auto;
 }
 
 div.center {
-    width: 100%;
-    margin-top: 50px;
+    margin: 0 auto;
     text-align: center;
 }
 
 div.wins, div.loses, div.tries, div.font, div.letters {
-    font-weight: bolder;
     display: inline-block;
     padding: 10px;
     background-color: #ffffff;
+    font-weight: bolder;
 }
 
 div.goodguesses {
     text-align: left;
     background-color: #77ff77;
     text-transform: lowercase;
-    width: 350px;
     margin: 0 auto;
     padding: 10px;
+    margin: 0 auto;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
 }
 
 div.badguesses {
     text-align: left;
     background-color: #ff7777;
     text-transform: lowercase;
-    width: 350px;
     margin: 0 auto;
     margin-bottom: 10px;
     padding: 10px;
+    margin: 0 auto;
+    margin: 10px;
+    margin-top: 0;
+    text-transform: uppercase;
 }
 
 div.font {
@@ -45,15 +55,7 @@ div.font {
 
 div.image {
     margin: 0 auto;
-    width: 550px;
     background-color: #ffffff;
-    text-transform: uppercase;
-}
-
-div.head {
-    min-width: 550px; 
-    background-color: #ffffff;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -61,6 +63,21 @@ img.pic {
     border: solid 3px;
     border-color: #666666;
 }
+
+div.select {
+    display: inline-block;
+    background-color: black; 
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 5px;
+    min-width: 50px;
+}
+
+div.select:hover {
+    cursor:pointer;
+}
+
 
 span.green, span.red {
     clear: both;
@@ -72,13 +89,4 @@ span.green, span.red {
 
 div.word {
     padding: 20px;
-}
-
-div.texture {
-    background: url(..assets/images/tile.jpg)
-}
-
-h1 {
-    padding-top: 10px;
-    margin: 0px;
 }

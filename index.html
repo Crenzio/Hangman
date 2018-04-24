@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Hangman</title>
+  <title>Hangman</title>
 </head>
+
 <body>
 
-<header>
+  <div class="main center nudge">
+    <div class="image">
+      <div class="wins">
+        <span>Wins: </span>
+        <span id="wins"></span>
+      </div>
+      <div class="loses">
+        <span>Loses: </span>
+        <span id="loses"></span>
+      </div>
+      <div class="tries">
+        <span>Mistakes Remaining: </span>
+        <span id="tries"></span>
+      </div>
+      <div class="goodguesses">
+        <span class="green">Right Answers: </span>
+        <span id="goodguesses"></span>
+      </div>
+      <div class="badguesses">
+        <span class="red">Mistakes: </span>
+        <span id="badguesses"></span>
+      </div>
+      <div id="pic">
+      </div>
+      <div class="word">
+        <p>
+          <strong>Start selecting letters for your word! <br /> Or Frank is doomed!
+        </p>
+        <span id="word"></span>
 
-<div class="head">
+        <br />
+        <br />
 
-  <h1>Old Western Hangman</h1>
+        <div id="A" class="select">A</div>
+        <div id="B" class="select">B</div>
+        <div id="C" class="select">C</div>
+        <div id="D" class="select">D</div>
+        <div id="E" class="select">E</div>
+        <div id="F" class="select">F</div>
+        <div id="G" class="select">G</div>
+        <div id="H" class="select">H</div>
+        <div id="I" class="select">I</div>
+        <div id="J" class="select">J</div>
+        <div id="K" class="select">K</div>
+        <div id="L" class="select">L</div>
+        <div id="M" class="select">M</div>
+        <div id="N" class="select">N</div>
+        <div id="O" class="select">O</div>
+        <div id="P" class="select">P</div>
+        <div id="Q" class="select">Q</div>
+        <div id="R" class="select">R</div>
+        <div id="S" class="select">S</div>
+        <div id="T" class="select">T</div>
+        <div id="U" class="select">U</div>
+        <div id="V" class="select">V</div>
+        <div id="W" class="select">W</div>
+        <div id="X" class="select">X</div>
+        <div id="Y" class="select">Y</div>
+        <div id="Z" class="select">Z</div>
 
-<img src="assets/images/header.jpg">
+        </strong>
+      </div>
+    </div>
+  </div>
 
-</div>
+  <script type="text/javascript" src="assets/javascript/hangman.js">
 
-</header>
-
-<div class = "center">
-<div class = "image">
-<div class="wins"><span>Wins: </span><span id="wins"></span></div>  
-<div class="loses"><span>Loses: </span><span id="loses"></span></div>  
-<div class="tries"><span>Mistakes Remaining: </span><span id="tries"></span></div>
-<div class="goodguesses"><span class="green">Right Answers: </span><span id="goodguesses"></span></div>
-<div class="badguesses"><span class="red">Mistakes: </span><span id="badguesses"></span></div>
-<div class="pic"><img class="pic" id="pic" src="assets/images/pic5.jpg"></div>
-<div class="word"><p>Think of the perfect thing to yell, one letter at a time. <br/>  Type a letter to make a guess.</p><span id="word"></span></div>
-</div>
-</div>
-
-<script type="text/javascript" src="assets/javascript/game.js">
-
-</script>
+  </script>
 
 </body>
+
 </html>
