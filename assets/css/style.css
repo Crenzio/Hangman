@@ -81,6 +81,29 @@ div.select:hover {
     cursor:pointer;
 }
 
+div.shuffle:hover{
+    cursor:pointer;
+}
+
+div.green {
+    background-color: darkgreen;
+}
+
+div.red {
+    background-color: darkred;
+}
+
+div.green:hover {
+    cursor: default;
+}
+
+div.red:hover {
+    cursor: default;
+}
+
+#emph {
+    color: blue;
+}
 
 span.green, span.red {
     clear: both;

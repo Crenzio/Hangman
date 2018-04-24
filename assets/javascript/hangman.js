@@ -1,5 +1,7 @@
 let choice;
 
+let flavor;
+
 let good = [];
 let bad = [];
 
@@ -33,112 +35,283 @@ function blank() {
 
 }
 
+// Ideally, we'd prevent repeating here by settting the CHOICE variabe whenever the user selects something with the SELECT class
+// For reasons I don't yet understand, the CHOICE variable is refusing to be set this way (focing me to grab the letter manually)
+// Allowing repeating code until I'm able to solve this problem 
 $("#A").click(function () {
     choice = "a";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#A").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#A").addClass("red");
+    }
 });
 $("#B").click(function () {
     choice = "b";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#B").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#B").addClass("red");
+    }
 });
 $("#C").click(function () {
     choice = "c";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#C").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#C").addClass("red");
+    }
 });
 $("#D").click(function () {
     choice = "d";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#D").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#D").addClass("red");
+    }
 });
 $("#E").click(function () {
     choice = "e";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#E").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#E").addClass("red");
+    }
 });
 $("#F").click(function () {
     choice = "f";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#F").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#F").addClass("red");
+    }
 });
 $("#G").click(function () {
     choice = "g";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#G").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#G").addClass("red");
+    }
 });
 $("#H").click(function () {
     choice = "h";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#H").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#H").addClass("red");
+    }
 });
 $("#I").click(function () {
     choice = "i";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#I").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#I").addClass("red");
+    }
 });
 $("#J").click(function () {
     choice = "j";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#J").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#J").addClass("red");
+    }
 });
 $("#K").click(function () {
     choice = "k";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#K").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#K").addClass("red");
+    }
 });
 $("#L").click(function () {
     choice = "l";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#L").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#L").addClass("red");
+    }
 });
 $("#M").click(function () {
     choice = "m";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#M").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#M").addClass("red");
+    }
 });
 $("#N").click(function () {
     choice = "n";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#N").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#N").addClass("red");
+    }
 });
 $("#O").click(function () {
     choice = "o";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#O").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#O").addClass("red");
+    }
 });
 $("#P").click(function () {
     choice = "p";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#P").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#P").addClass("red");
+    }
 });
 $("#Q").click(function () {
     choice = "q";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#QJ").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#Q").addClass("red");
+    }
 });
 $("#R").click(function () {
     choice = "r";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#R").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#R").addClass("red");
+    }
 });
 $("#S").click(function () {
     choice = "s";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#S").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#S").addClass("red");
+    }
 });
 $("#T").click(function () {
     choice = "t";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#T").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#T").addClass("red");
+    }
 });
 $("#U").click(function () {
     choice = "u";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#U").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#U").addClass("red");
+    }
 });
 $("#V").click(function () {
     choice = "v";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#V").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#V").addClass("red");
+    }
 });
 $("#W").click(function () {
     choice = "w";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#W").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#W").addClass("red");
+    }
 });
 $("#X").click(function () {
     choice = "x";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#X").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#X").addClass("red");
+    }
 });
 $("#Y").click(function () {
     choice = "y";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#Y").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#Y").addClass("red");
+    }
 });
 $("#Z").click(function () {
     choice = "z";
     score();
+    if (good.indexOf(choice) > -1) {
+        $("#Z").addClass("green");
+    }
+    if (bad.indexOf(choice) > -1) {
+        $("#Z").addClass("red");
+    }
+});
+
+$("#pic").click(function () {
+    if (picNum === 0 || tries === 0) {
+        reset();
+    }
 });
 
 function score() {
+    if (tries === 0) {
+        return null;
+    }
+    if (picNum === 0) {
+        return null;
+    }
     if (good.indexOf(choice) > -1) {
         return null;
     }
@@ -161,39 +334,40 @@ function score() {
         victory();
     }
     else {
-        if (tries === 0) {
-            reset();
-        }
-        else {
-            tries--;
-            picNum++;
+        tries--;
+        picNum++;
+        if (picNum === 15) {
+            document.getElementById("flavor").innerHTML = "<br /> Alas, poor Frank... <br /> Your word was <span id='emph'>" + word + "</span> <br /> Click Frank to play again.";
+            loses++;
+            $("#pic").addClass("shuffle");
         }
     }
-    form()
+    form();
 }
 
 function reset() {
     tries = 10;
     picNum = 5;
-    loses++;
     good = [];
     bad = [];
     mystery = [];
     blanks = [];
+    document.getElementById("flavor").innerHTML = "";
+    $("#pic").removeClass("shuffle");
+    $(".select").removeClass("green");
+    $(".select").removeClass("red");
     build();
     form();
 }
 
 function victory() {
     if (blanks.length == good.length) {
-        tries = 10;
-        picNum = 5;
-        wins++;
-        good = [];
-        bad = [];
-        mystery = [];
         blanks = [];
-        build();
+        document.getElementById("flavor").innerHTML = "You win! <br /> Click Frank to play again!";
+        picNum = 0;
+        wins++;
+        $("#pic").addClass("shuffle");
+        form();
     }
 }
 
