@@ -8,6 +8,7 @@ div.main {
     min-width: 360px;
     margin: 0 auto;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 div.center {
@@ -65,7 +66,6 @@ div.image {
 }
 
 img.pic {
-    border: solid 3px;
     border-color: black;
 }
 

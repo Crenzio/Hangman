@@ -2,153 +2,165 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <link rel="icon" href="assets/images/icon.jpg">
+    <link rel="icon" href="assets/images/icon.png">
 
-  <meta property="og:title" content="Save Frank from the Hangman">
-  <meta property="og:image" content="assets/images/SaveFrank.jpg">
-  <meta property:"og:description" content="A simple Hangman game. Hours of fun with random words to guess!">
-  <meta property="og:url" content="https://crenzio.github.io/Hangman/">
+    <link rel="prefetch" href="assets/images/pic0.jpg">
+    <link rel="prefetch" href="assets/images/pic5.jpg">
+    <link rel="prefetch" href="assets/images/pic6.jpg">
+    <link rel="prefetch" href="assets/images/pic7.jpg">
+    <link rel="prefetch" href="assets/images/pic8.jpg">
+    <link rel="prefetch" href="assets/images/pic9.jpg">
+    <link rel="prefetch" href="assets/images/pic10.jpg">
+    <link rel="prefetch" href="assets/images/pic11.jpg">
+    <link rel="prefetch" href="assets/images/pic12.jpg">
+    <link rel="prefetch" href="assets/images/pic13.jpg">
+    <link rel="prefetch" href="assets/images/pic14.jpg">
+    <link rel="prefetch" href="assets/images/pic15.jpg">
 
-  <title>Hangman</title>
+    <meta property="og:title" content="Save Frank from the Hangman">
+    <meta property="og:image" content="assets/images/SaveFrank.jpg">
+    <meta property: "og:description" content="A simple Hangman game. Hours of fun with random words to guess!">
+    <meta property="og:url" content="https://crenzio.github.io/Hangman/">
+
+    <title>Hangman</title>
 </head>
 
 <body>
 
-  <div class="main center nudge">
-    <div class="image">
-      <div class="goodguesses">
-        <span class="green">Right Answers: </span>
-        <span id="goodguesses"></span>
-      </div>
-      <div class="badguesses">
-        <span class="red">Mistakes: </span>
-        <span id="badguesses"></span>
-      </div>
-      <div id="pic">
-      </div>
+    <div class="main center nudge">
+        <div class="image">
+            <div class="goodguesses">
+                <span class="green">Right Answers: </span>
+                <span id="goodguesses"></span>
+            </div>
+            <div class="badguesses">
+                <span class="red">Mistakes: </span>
+                <span id="badguesses"></span>
+            </div>
+            <div id="pic">
+            </div>
 
-      <div class="wins">
-        <span>Wins: </span>
-        <span id="wins"></span>
-      </div>
-      <div class="loses">
-        <span>Loses: </span>
-        <span id="loses"></span>
-      </div>
-      <div class="tries">
-        <span>Mistakes Remaining: </span>
-        <span id="tries"></span>
-      </div>
+            <div class="wins">
+                <span>Wins: </span>
+                <span id="wins"></span>
+            </div>
+            <div class="loses">
+                <span>Loses: </span>
+                <span id="loses"></span>
+            </div>
+            <div class="tries">
+                <span>Mistakes Remaining: </span>
+                <span id="tries"></span>
+            </div>
 
 
-      <div class="word">
-        <strong>
-          <span id="word"></span>
+            <div class="word">
+                <strong>
+                    <span id="word"></span>
 
-          <div>
-            <span id="flavor"></span>
-          </div>
+                    <div>
+                        <span id="flavor"></span>
+                    </div>
 
-        </strong>
+                </strong>
 
-        <br />
-        <br />
+                <br />
+                <br />
 
-        <a href="#pic">
-          <div id="A" class="select">A</div>
-        </a>
-        <a href="#pic">
-          <div id="B" class="select">B</div>
-        </a>
-        <a href="#pic">
-          <div id="C" class="select">C</div>
-        </a>
-        <a href="#pic">
-          <div id="D" class="select">D</div>
-        </a>
-        <a href="#pic">
-          <div id="E" class="select">E</div>
-        </a>
-        <a href="#pic">
-          <div id="F" class="select">F</div>
-        </a>
-        <a href="#pic">
-          <div id="G" class="select">G</div>
-        </a>
-        <a href="#pic">
-          <div id="H" class="select">H</div>
-        </a>
-        <a href="#pic">
-          <div id="I" class="select">I</div>
-        </a>
-        <a href="#pic">
-          <div id="J" class="select">J</div>
-        </a>
-        <a href="#pic">
-          <div id="K" class="select">K</div>
-        </a>
-        <a href="#pic">
-          <div id="L" class="select">L</div>
-        </a>
-        <a href="#pic">
-          <div id="M" class="select">M</div>
-        </a>
-        <a href="#pic">
-          <div id="N" class="select">N</div>
-        </a>
-        <a href="#pic">
-          <div id="O" class="select">O</div>
-        </a>
-        <a href="#pic">
-          <div id="P" class="select">P</div>
-        </a>
-        <a href="#pic">
-          <div id="Q" class="select">Q</div>
-        </a>
-        <a href="#pic">
-          <div id="R" class="select">R</div>
-        </a>
-        <a href="#pic">
-          <div id="S" class="select">S</div>
-        </a>
-        <a href="#pic">
-          <div id="T" class="select">T</div>
-        </a>
-        <a href="#pic">
-          <div id="U" class="select">U</div>
-        </a>
-        <a href="#pic">
-          <div id="V" class="select">V</div>
-        </a>
-        <a href="#pic">
-          <div id="W" class="select">W</div>
-        </a>
-        <a href="#pic">
-          <div id="X" class="select">X</div>
-        </a>
-        <a href="#pic">
-          <div id="Y" class="select">Y</div>
-        </a>
-        <a href="#pic">
-          <div id="Z" class="select">Z</div>
-        </a>
+                <a href="#pic">
+                    <div id="A" class="select">A</div>
+                </a>
+                <a href="#pic">
+                    <div id="B" class="select">B</div>
+                </a>
+                <a href="#pic">
+                    <div id="C" class="select">C</div>
+                </a>
+                <a href="#pic">
+                    <div id="D" class="select">D</div>
+                </a>
+                <a href="#pic">
+                    <div id="E" class="select">E</div>
+                </a>
+                <a href="#pic">
+                    <div id="F" class="select">F</div>
+                </a>
+                <a href="#pic">
+                    <div id="G" class="select">G</div>
+                </a>
+                <a href="#pic">
+                    <div id="H" class="select">H</div>
+                </a>
+                <a href="#pic">
+                    <div id="I" class="select">I</div>
+                </a>
+                <a href="#pic">
+                    <div id="J" class="select">J</div>
+                </a>
+                <a href="#pic">
+                    <div id="K" class="select">K</div>
+                </a>
+                <a href="#pic">
+                    <div id="L" class="select">L</div>
+                </a>
+                <a href="#pic">
+                    <div id="M" class="select">M</div>
+                </a>
+                <a href="#pic">
+                    <div id="N" class="select">N</div>
+                </a>
+                <a href="#pic">
+                    <div id="O" class="select">O</div>
+                </a>
+                <a href="#pic">
+                    <div id="P" class="select">P</div>
+                </a>
+                <a href="#pic">
+                    <div id="Q" class="select">Q</div>
+                </a>
+                <a href="#pic">
+                    <div id="R" class="select">R</div>
+                </a>
+                <a href="#pic">
+                    <div id="S" class="select">S</div>
+                </a>
+                <a href="#pic">
+                    <div id="T" class="select">T</div>
+                </a>
+                <a href="#pic">
+                    <div id="U" class="select">U</div>
+                </a>
+                <a href="#pic">
+                    <div id="V" class="select">V</div>
+                </a>
+                <a href="#pic">
+                    <div id="W" class="select">W</div>
+                </a>
+                <a href="#pic">
+                    <div id="X" class="select">X</div>
+                </a>
+                <a href="#pic">
+                    <div id="Y" class="select">Y</div>
+                </a>
+                <a href="#pic">
+                    <div id="Z" class="select">Z</div>
+                </a>
 
-        </strong>
-      </div>
+                </strong>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script type="text/javascript" src="assets/javascript/hangman.js">
-
-  </script>
+    <script type="text/javascript" src="assets/javascript/hangman.js">
+    </script>
 
 </body>
 
