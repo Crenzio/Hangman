@@ -9,7 +9,38 @@ let wins = 0;
 let loses = 0;
 let tries = 10;
 
-let word = "abc";
+let list = [
+    "Admonishment", "Allotrope", "Anthropocentric", "Astrobleme", "Axolotl",
+    "Bewilderment", "Bioluminescent", "Blastema", "Bombastic", "Bristlecone", "Banshee",
+    "Cephalopod", "Conflagrate", "Contextomy", "Cumulonimbus", "Cytoplasm", "Cretaceous",
+    "Dematerialize", "Demonstrative", "Debonair", "Disenchantment", "Discography",
+    "Eldritch", "Entrancing", "Euclidean", "Eurhythmic", "Extradimensional", "Exuberant", "Enkindling", "Edenic",
+    "Falstaffian", "Fantastical", "Fortitudinous", "Fractal", "Futurist",
+    "Gargantuan", "Gelatinous", "Generous", "Glacial", "Grotesquery", "Grimoire", "Gregarious", "Galivant", "Genuflect", "Gothic",
+    "Hangover", "Highfalutin", "Holistic", "Horology", "Horrendous",
+    "Iconoclast", "Incredulous", "Indecipherable", "Interplanetary", "Iridescent",
+    "Jasmine", "Joviality", "Judgement", "Juniper", "Juxtapose",
+    "Kafkaesque", "Kaleidoscope", "Kilojoules", "Kimono", "Kingfisher", "Knowledgeable",
+    "Lamentation", "Legendary", "Liberating", "Longevity", "Loquacious", "Lovecraftian",
+    "Magnanimous", "Managerial", "Matriculate", "Milquetoast", "Mosaic", "Monetization",
+    "Nebulous", "Nightmarish", "Nondescript", "Normcore", "Nurturing", "Nostalgic",
+    "Omniscient", "Ostentatious", "Ouroboros", "Outrageous", "Overwatch",
+    "Paradoxical", "Paranormal", "Polymorph", "Polysyllabic", "Protocell", "Polyglot",
+    "Quadradic", "Qualification", "Questing", "Quintessential", "Quivering",
+    "Ravishing", "Rhododendron", "Riant", "Riverine", "Roguishness", "Resplendent",
+    "Sanctimonious", "Sapient", "Shakespearian", "Sophomoric", "Supernova",
+    "Tantamount", "Thoroughfare", "Transmigration", "Truthiness", "Tyrannical", "Tsunami", "Transformative",
+    "Ubiquitous", "Ukulele", "Undulate", "Unregulated", "Unrequited",
+    "Valiant", "Vanguard", "Variegated", "Verisimilitude", "Verbose",
+    "Wakeboarding", "Wanderlust", "Wastrel", "Waterborne", "Wrongheaded",
+    "Xanadu", "Xenomorph", "Xenon", "Xeroxed", "Xylophone",
+    "Yearend", "Yeomen", "Yeshiva", "Yesteryear", "Youngblood",
+    "Zamboni", "Zeitgeist", "Zealotry", "Zombification", "Zoroastrianism",
+];
+
+let listItem = Math.floor(Math.random() * list.length);
+let word = list[listItem].toLowerCase();
+
 let mystery = [];
 let blanks = [];
 
@@ -202,7 +233,7 @@ $("#Q").click(function () {
     choice = "q";
     score();
     if (good.indexOf(choice) > -1) {
-        $("#QJ").addClass("green");
+        $("#Q").addClass("green");
     }
     if (bad.indexOf(choice) > -1) {
         $("#Q").addClass("red");
@@ -301,6 +332,8 @@ $("#Z").click(function () {
 
 $("#pic").click(function () {
     if (picNum === 0 || tries === 0) {
+        listItem = Math.floor(Math.random() * list.length);
+        word = list[listItem].toLowerCase();
         reset();
     }
 });
@@ -361,7 +394,7 @@ function reset() {
 }
 
 function victory() {
-    if (blanks.length == good.length) {
+    if (blanks.join("") == word) {
         blanks = [];
         document.getElementById("flavor").innerHTML = "You win! <br /> Click Frank to play again!";
         picNum = 0;
