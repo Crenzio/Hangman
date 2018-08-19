@@ -396,7 +396,7 @@ function reset() {
 function victory() {
     if (blanks.join("") == word) {
         blanks = [];
-        document.getElementById("flavor").innerHTML = "You win! <br /> Click Frank to play again!";
+        document.getElementById("flavor").innerHTML = "You win! <br /> You word was <span id='emph'>" + word + "</span>! <br /> Click Frank to play again!";
         picNum = 0;
         wins++;
         $("#pic").addClass("shuffle");
